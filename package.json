@@ -1,0 +1,28 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Simple Tic-tac-toe game using React",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "emotion": "^10.0.17",
+    "lodash": "^4.17.15",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-emotion": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "parcel-bundler": "^1.12.3",
+    "react-hot-loader": "^4.12.13"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Teemu Tanninen",
+  "license": "ISC"
+}
