@@ -124,7 +124,7 @@ class App extends Component {
       })
       if (hasWon)
 
-      alert(`Player ${currentPlayer === 'x' ? 1 : 2} has won!`)
+      alert(`Player ${currentPlayer === 'x' ? 1 : 2} won!`)
     }
   }
   render() {
