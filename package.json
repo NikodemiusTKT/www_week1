@@ -21,7 +21,8 @@
     "react-hot-loader": "^4.12.13"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Teemu Tanninen",
   "license": "ISC"
