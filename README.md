@@ -5,8 +5,10 @@ Simple tic tac toe game build using React.js framework.
 1. `git clone https://github.com/NikodemiusTKT/www_week1`
 2. `cd www_week1`
 2. `npm install`
-3. `npm run https://github.com/NikodemiusTKT/www_week1/edit/master/README.mdtart`
+3. `npm run start`
+4. Open browser at http://localhost:5000
 
 ## Alternative with docker
-`docker-compose up`
-open browser localhost:5000
+1. `docker build https://github.com/NikodemiusTKT/www_week1 -t tictactoe`
+2. `docker run -p 5000:5000 tictactoe`
+3. open browser at http://localhost:5000
