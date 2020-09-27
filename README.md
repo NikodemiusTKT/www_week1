@@ -9,6 +9,6 @@ Simple tic tac toe game build using React.js framework.
 4. Open browser at http://localhost:5000
 
 ## Alternative with docker
-1. `docker build https://github.com/NikodemiusTKT/www_week1 -t tictactoe`
+1. `docker build http://github.com/NikodemiusTKT/www_week1.git -t tictactoe`
 2. `docker run -p 5000:5000 tictactoe`
 3. open browser at http://localhost:5000
