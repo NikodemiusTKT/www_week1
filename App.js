@@ -15,6 +15,9 @@ const START_STATE = {
   currentPlayer: 'x',
   grid: cloneDeep(GRID),
   gameOver: false,
+  winLimit: 5,
+  boardSize: 5,
+  options: [3,4,5,6,7,8,9,10,12,13,14],
 }
 
 const appStyle = css({
@@ -103,20 +106,39 @@ const checkWin = ({ gridItems, winString }) => {
   return hasWon;
 }
 
+const make2DArray = (size) => {
+  var arr = new Array(size).fill(null);
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = new Array(size).fill(null).slice();
+  }
+  return arr;
+}
+
 class App extends Component {
   constructor(props){
     super(props);
     this.state = cloneDeep(START_STATE);
-    console.log(this.state)
+    this.changeGridSize = this.changeGridSize.bind(this)
+  }
+  changeGridSize (event) {
+const value = parseInt(event.target.value)
+    const newGrid = make2DArray(value)
+    this.setState({
+      grid: newGrid,
+      boardSize: value,
+      winLimit: value,
+      gameOver: false,
+      currentPlayer: 'x',
+    })
   }
   handleClick = ({rowIndex, colIndex}) => {
-    const { currentPlayer, grid, gameOver } = this.state
+    const { currentPlayer, grid, gameOver,winLimit } = this.state
     if (!gameOver && !grid[rowIndex][colIndex]) {
       const cloneGrid = cloneDeep(grid)
       const nextPlayer = currentPlayer === 'x' ? 'o' : 'x';
       cloneGrid[rowIndex][colIndex] = currentPlayer;
       const gridItems = mapGridIndexes({grid: cloneGrid, value: currentPlayer})
-      const hasWon = checkWin({gridItems, winString: MIN_TO_WIN})
+      const hasWon = checkWin({gridItems, winString: winLimit})
       this.setState({
         currentPlayer: nextPlayer,
         grid: cloneGrid,
@@ -127,6 +149,17 @@ class App extends Component {
       alert(`Player ${currentPlayer === 'x' ? 1 : 2} won!`)
     }
   }
+  resetGame = () => {
+    const { boardSize, winLimit} = this.state;
+    var board = make2DArray(boardSize);
+    this.setState({
+      grid: board,
+      winLimit,
+      boardSize,
+      currentPlayer: 'x',
+      gameOver: false,
+    })
+  }
   render() {
     const {
       grid
@@ -135,7 +168,12 @@ class App extends Component {
       <div id="board" className={appStyle}>
       <h1>React.js Tic-Tac-Toe</h1>
         <Board onClick={this.handleClick} rows={grid} />
-      <button onClick={() => this.setState(cloneDeep(START_STATE))}>Reset</button>
+      <button style={{marginTop:"10px"}} onClick={this.resetGame}>Reset</button>
+        <select value={this.state.boardSize} onChange={this.changeGridSize}>
+          {this.state.options.map((opt, index) =>
+            <option value={opt} key={index}>{opt}</option>
+          )}
+        </select>
       </div>
     )
   }

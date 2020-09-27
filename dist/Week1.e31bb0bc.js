@@ -6514,7 +6514,7 @@ if ("development" !== "production") {
       }
 
       var eventName = 'on' + eventNameSuffix;
-      var isSupported = eventName in document;
+      var isSupported = (eventName in document);
 
       if (!isSupported) {
         var element = document.createElement('div');
@@ -30669,9 +30669,7 @@ function createStyleElement(options) {
   return tag;
 }
 
-var StyleSheet =
-/*#__PURE__*/
-function () {
+var StyleSheet = /*#__PURE__*/function () {
   function StyleSheet(options) {
     this.isSpeedy = options.speedy === undefined ? "development" === 'production' : options.speedy;
     this.tags = [];
@@ -32293,7 +32291,7 @@ exports.merge = merge;
 exports.cx = cx;
 exports.hydrate = hydrate;
 exports.flush = flush;
-},{"create-emotion":"node_modules/create-emotion/dist/create-emotion.browser.esm.js"}],"node_modules/base64-js/index.js":[function(require,module,exports) {
+},{"create-emotion":"node_modules/create-emotion/dist/create-emotion.browser.esm.js"}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
 'use strict'
 
 exports.byteLength = byteLength
@@ -32447,7 +32445,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],"node_modules/ieee754/index.js":[function(require,module,exports) {
+},{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js":[function(require,module,exports) {
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -32533,20 +32531,20 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"node_modules/isarray/index.js":[function(require,module,exports) {
+},{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js":[function(require,module,exports) {
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],"node_modules/buffer/index.js":[function(require,module,exports) {
+},{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js":[function(require,module,exports) {
 
 var global = arguments[3];
 /*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @author   Feross Aboukhadijeh <http://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */
@@ -34333,7 +34331,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":"node_modules/base64-js/index.js","ieee754":"node_modules/ieee754/index.js","isarray":"node_modules/isarray/index.js","buffer":"node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
+},{"base64-js":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js","ieee754":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js","isarray":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js","buffer":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
 var global = arguments[3];
 var Buffer = require("buffer").Buffer;
 var define;
@@ -51450,7 +51448,7 @@ var define;
   }
 }.call(this));
 
-},{"buffer":"node_modules/buffer/index.js"}],"components/Square.js":[function(require,module,exports) {
+},{"buffer":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"components/Square.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51514,8 +51512,8 @@ exports.default = _default2;
     return;
   }
 
-  reactHotLoader.register(Square, "Square", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
-  reactHotLoader.register(_default, "default", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
+  reactHotLoader.register(Square, "Square", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
+  reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
 })();
 
 ;
@@ -51542,7 +51540,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
@@ -51585,8 +51583,8 @@ exports.default = _default2;
     return;
   }
 
-  reactHotLoader.register(Row, "Row", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
-  reactHotLoader.register(_default, "default", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
+  reactHotLoader.register(Row, "Row", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
+  reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
 })();
 
 ;
@@ -51613,7 +51611,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
@@ -51658,9 +51656,9 @@ exports.default = _default2;
     return;
   }
 
-  reactHotLoader.register(boardStyle, "boardStyle", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
-  reactHotLoader.register(Board, "Board", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
-  reactHotLoader.register(_default, "default", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+  reactHotLoader.register(boardStyle, "boardStyle", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+  reactHotLoader.register(Board, "Board", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+  reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
 })();
 
 ;
@@ -51689,7 +51687,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
@@ -51704,15 +51702,45 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) {
+  function isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+
+    try {
+      Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  return function () {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (isNativeReflectConstruct()) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -51739,7 +51767,10 @@ var GRID = ROW_ARR.map(function (x) {
 var START_STATE = {
   currentPlayer: 'x',
   grid: (0, _lodash.cloneDeep)(GRID),
-  gameOver: false
+  gameOver: false,
+  winLimit: 5,
+  boardSize: 5,
+  options: [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14]
 };
 var appStyle = (0, _emotion.css)({
   textAlign: 'center'
@@ -51899,17 +51930,27 @@ var checkWin = function checkWin(_ref5) {
   return hasWon;
 };
 
-var App =
-/*#__PURE__*/
-function (_Component) {
+var make2DArray = function make2DArray(size) {
+  var arr = new Array(size).fill(null);
+
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = new Array(size).fill(null).slice();
+  }
+
+  return arr;
+};
+
+var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
+
+  var _super = _createSuper(App);
 
   function App(props) {
     var _this;
 
     _classCallCheck(this, App);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
+    _this = _super.call(this, props);
 
     _defineProperty(_assertThisInitialized(_this), "handleClick", function (_ref6) {
       var rowIndex = _ref6.rowIndex,
@@ -51917,7 +51958,8 @@ function (_Component) {
       var _this$state = _this.state,
           currentPlayer = _this$state.currentPlayer,
           grid = _this$state.grid,
-          gameOver = _this$state.gameOver;
+          gameOver = _this$state.gameOver,
+          winLimit = _this$state.winLimit;
 
       if (!gameOver && !grid[rowIndex][colIndex]) {
         var cloneGrid = (0, _lodash.cloneDeep)(grid);
@@ -51929,7 +51971,7 @@ function (_Component) {
         });
         var hasWon = checkWin({
           gridItems: gridItems,
-          winString: MIN_TO_WIN
+          winString: winLimit
         });
 
         _this.setState({
@@ -51938,20 +51980,50 @@ function (_Component) {
           gameOver: hasWon
         });
 
-        if (hasWon) alert("Player ".concat(currentPlayer === 'x' ? 1 : 2, " has won!"));
+        if (hasWon) alert("Player ".concat(currentPlayer === 'x' ? 1 : 2, " won!"));
       }
     });
 
+    _defineProperty(_assertThisInitialized(_this), "resetGame", function () {
+      var _this$state2 = _this.state,
+          boardSize = _this$state2.boardSize,
+          winLimit = _this$state2.winLimit;
+      var board = make2DArray(boardSize);
+
+      _this.setState({
+        grid: board,
+        winLimit: winLimit,
+        boardSize: boardSize,
+        currentPlayer: 'x',
+        gameOver: false,
+        timerValue: 0,
+        timer: clearInterval(_this.state.timer)
+      });
+    });
+
     _this.state = (0, _lodash.cloneDeep)(START_STATE);
-    console.log(_this.state);
+    _this.changeGridSize = _this.changeGridSize.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(App, [{
+    key: "changeGridSize",
+    value: function changeGridSize(event) {
+      var value = parseInt(event.target.value);
+      var newGrid = make2DArray(value);
+      this.setState({
+        grid: newGrid,
+        boardSize: value,
+        winLimit: value,
+        gameOver: false,
+        currentPlayer: 'x',
+        timerValue: 0,
+        timer: clearInterval(this.state.timer)
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       var grid = this.state.grid;
       return _react.default.createElement("div", {
         id: "board",
@@ -51960,10 +52032,19 @@ function (_Component) {
         onClick: this.handleClick,
         rows: grid
       }), _react.default.createElement("button", {
-        onClick: function onClick() {
-          return _this2.setState((0, _lodash.cloneDeep)(START_STATE));
-        }
-      }, "Reset"));
+        style: {
+          marginTop: "10px"
+        },
+        onClick: this.resetGame
+      }, "Reset"), _react.default.createElement("select", {
+        value: this.state.boardSize,
+        onChange: this.changeGridSize
+      }, this.state.options.map(function (opt, index) {
+        return _react.default.createElement("option", {
+          value: opt,
+          key: index
+        }, opt);
+      })));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -51989,22 +52070,23 @@ exports.default = _default2;
     return;
   }
 
-  reactHotLoader.register(ROWS, "ROWS", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(COLS, "COLS", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(MIN_TO_WIN, "MIN_TO_WIN", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(ROW_ARR, "ROW_ARR", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(COL_ARR, "COL_ARR", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(GRID, "GRID", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(START_STATE, "START_STATE", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(appStyle, "appStyle", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(diffCols, "diffCols", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(diffRows, "diffRows", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(flattenAndFilterArray, "flattenAndFilterArray", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(mapGridIndexes, "mapGridIndexes", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(compareToRest, "compareToRest", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(checkWin, "checkWin", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(App, "App", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
-  reactHotLoader.register(_default, "default", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(ROWS, "ROWS", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(COLS, "COLS", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(MIN_TO_WIN, "MIN_TO_WIN", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(ROW_ARR, "ROW_ARR", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(COL_ARR, "COL_ARR", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(GRID, "GRID", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(START_STATE, "START_STATE", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(appStyle, "appStyle", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(diffCols, "diffCols", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(diffRows, "diffRows", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(flattenAndFilterArray, "flattenAndFilterArray", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(mapGridIndexes, "mapGridIndexes", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(compareToRest, "compareToRest", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(checkWin, "checkWin", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(make2DArray, "make2DArray", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(App, "App", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
 })();
 
 ;
@@ -52050,7 +52132,7 @@ _reactDom.default.render(_react.default.createElement(_App.default, null), mount
     return;
   }
 
-  reactHotLoader.register(mountNode, "mountNode", "/home/tkt/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/index.js");
+  reactHotLoader.register(mountNode, "mountNode", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/index.js");
 })();
 
 ;
@@ -52059,7 +52141,7 @@ _reactDom.default.render(_react.default.createElement(_App.default, null), mount
   var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
   leaveModule && leaveModule(module);
 })();
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -52087,7 +52169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44749" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -52118,8 +52200,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -52262,5 +52345,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/Week1.e31bb0bc.js.map
