@@ -32291,7 +32291,11 @@ exports.merge = merge;
 exports.cx = cx;
 exports.hydrate = hydrate;
 exports.flush = flush;
+<<<<<<< HEAD
 },{"create-emotion":"node_modules/create-emotion/dist/create-emotion.browser.esm.js"}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
+=======
+},{"create-emotion":"node_modules/create-emotion/dist/create-emotion.browser.esm.js"}],"../../../../../.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 'use strict'
 
 exports.byteLength = byteLength
@@ -32445,7 +32449,11 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
+<<<<<<< HEAD
 },{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js":[function(require,module,exports) {
+=======
+},{}],"../../../../../.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -32531,14 +32539,22 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
+<<<<<<< HEAD
 },{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js":[function(require,module,exports) {
+=======
+},{}],"../../../../../.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
+<<<<<<< HEAD
 },{}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js":[function(require,module,exports) {
+=======
+},{}],"../../../../../.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 
 var global = arguments[3];
 /*!
@@ -34331,7 +34347,11 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
+<<<<<<< HEAD
 },{"base64-js":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js","ieee754":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js","isarray":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js","buffer":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
+=======
+},{"base64-js":"../../../../../.node_modules/lib/node_modules/parcel/node_modules/base64-js/index.js","ieee754":"../../../../../.node_modules/lib/node_modules/parcel/node_modules/ieee754/index.js","isarray":"../../../../../.node_modules/lib/node_modules/parcel/node_modules/isarray/index.js","buffer":"../../../../../.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"node_modules/lodash/lodash.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 var global = arguments[3];
 var Buffer = require("buffer").Buffer;
 var define;
@@ -51448,7 +51468,11 @@ var define;
   }
 }.call(this));
 
+<<<<<<< HEAD
 },{"buffer":"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"components/Square.js":[function(require,module,exports) {
+=======
+},{"buffer":"../../../../../.node_modules/lib/node_modules/parcel/node_modules/buffer/index.js"}],"components/Square.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51512,8 +51536,13 @@ exports.default = _default2;
     return;
   }
 
+<<<<<<< HEAD
   reactHotLoader.register(Square, "Square", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
   reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
+=======
+  reactHotLoader.register(Square, "Square", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
+  reactHotLoader.register(_default, "default", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Square.js");
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 })();
 
 ;
@@ -51583,8 +51612,13 @@ exports.default = _default2;
     return;
   }
 
+<<<<<<< HEAD
   reactHotLoader.register(Row, "Row", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
   reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
+=======
+  reactHotLoader.register(Row, "Row", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
+  reactHotLoader.register(_default, "default", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Row.js");
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 })();
 
 ;
@@ -51656,9 +51690,15 @@ exports.default = _default2;
     return;
   }
 
+<<<<<<< HEAD
   reactHotLoader.register(boardStyle, "boardStyle", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
   reactHotLoader.register(Board, "Board", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
   reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+=======
+  reactHotLoader.register(boardStyle, "boardStyle", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+  reactHotLoader.register(Board, "Board", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+  reactHotLoader.register(_default, "default", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/components/Board.js");
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 })();
 
 ;
@@ -51930,6 +51970,7 @@ var checkWin = function checkWin(_ref5) {
   return hasWon;
 };
 
+<<<<<<< HEAD
 var make2DArray = function make2DArray(size) {
   var arr = new Array(size).fill(null);
 
@@ -51940,6 +51981,8 @@ var make2DArray = function make2DArray(size) {
   return arr;
 };
 
+=======
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
 
@@ -51985,6 +52028,7 @@ var App = /*#__PURE__*/function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "resetGame", function () {
+<<<<<<< HEAD
       var _this$state2 = _this.state,
           boardSize = _this$state2.boardSize,
           winLimit = _this$state2.winLimit;
@@ -51998,6 +52042,22 @@ var App = /*#__PURE__*/function (_Component) {
         gameOver: false,
         timerValue: 0,
         timer: clearInterval(_this.state.timer)
+=======
+      var rows = _this.state.boardSize;
+      var cols = _this.state.boardSize;
+      var row_arr = new Array(rows).fill(null);
+      var col_arr = new Array(cols).fill(null);
+      var grid = row_arr.map(function (x) {
+        return col_arr.slice();
+      });
+      var cloneGrid = (0, _lodash.cloneDeep)(_this.state.grid);
+
+      _this.setState({
+        currentPlayer: 'x',
+        grid: (0, _lodash.cloneDeep)(grid),
+        gameOver: false,
+        boardSize: _this.state.boardSize
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
       });
     });
 
@@ -52009,6 +52069,7 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "changeGridSize",
     value: function changeGridSize(event) {
+<<<<<<< HEAD
       var value = parseInt(event.target.value);
       var newGrid = make2DArray(value);
       this.setState({
@@ -52020,6 +52081,22 @@ var App = /*#__PURE__*/function (_Component) {
         timerValue: 0,
         timer: clearInterval(this.state.timer)
       });
+=======
+      var value = event.target.value;
+      var rows = parseInt(value);
+      var cols = parseInt(value);
+      var row_arr = new Array(rows).fill(null);
+      var col_arr = new Array(cols).fill(null);
+      var grid = row_arr.map(function (x) {
+        return col_arr.slice();
+      });
+      this.setState({
+        grid: (0, _lodash.cloneDeep)(grid),
+        winLimit: value,
+        boardSize: value
+      });
+      console.log(grid);
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
     }
   }, {
     key: "render",
@@ -52070,6 +52147,7 @@ exports.default = _default2;
     return;
   }
 
+<<<<<<< HEAD
   reactHotLoader.register(ROWS, "ROWS", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
   reactHotLoader.register(COLS, "COLS", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
   reactHotLoader.register(MIN_TO_WIN, "MIN_TO_WIN", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
@@ -52087,6 +52165,24 @@ exports.default = _default2;
   reactHotLoader.register(make2DArray, "make2DArray", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
   reactHotLoader.register(App, "App", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
   reactHotLoader.register(_default, "default", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+=======
+  reactHotLoader.register(ROWS, "ROWS", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(COLS, "COLS", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(MIN_TO_WIN, "MIN_TO_WIN", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(ROW_ARR, "ROW_ARR", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(COL_ARR, "COL_ARR", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(GRID, "GRID", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(START_STATE, "START_STATE", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(appStyle, "appStyle", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(diffCols, "diffCols", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(diffRows, "diffRows", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(flattenAndFilterArray, "flattenAndFilterArray", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(mapGridIndexes, "mapGridIndexes", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(compareToRest, "compareToRest", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(checkWin, "checkWin", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(App, "App", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+  reactHotLoader.register(_default, "default", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/App.js");
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 })();
 
 ;
@@ -52132,7 +52228,11 @@ _reactDom.default.render(_react.default.createElement(_App.default, null), mount
     return;
   }
 
+<<<<<<< HEAD
   reactHotLoader.register(mountNode, "mountNode", "/media/Seagate Backup Plus/Dropbox/Koulu/Lukuvuosi_19-20/WWW/Week1/index.js");
+=======
+  reactHotLoader.register(mountNode, "mountNode", "/home/tkt/OneDrive/Koulu/Lukuvuosi_19-20/WWW/Week1/index.js");
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 })();
 
 ;
@@ -52141,7 +52241,11 @@ _reactDom.default.render(_react.default.createElement(_App.default, null), mount
   var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
   leaveModule && leaveModule(module);
 })();
+<<<<<<< HEAD
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+=======
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"../../../../../.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -52169,7 +52273,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "44749" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43211" + '/');
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -52345,5 +52453,9 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
+<<<<<<< HEAD
 },{}]},{},["../../../../../../../home/tkt/.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+=======
+},{}]},{},["../../../../../.node_modules/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
 //# sourceMappingURL=/Week1.e31bb0bc.js.map

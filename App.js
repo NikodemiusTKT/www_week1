@@ -121,6 +121,7 @@ class App extends Component {
     this.changeGridSize = this.changeGridSize.bind(this)
   }
   changeGridSize (event) {
+<<<<<<< HEAD
 const value = parseInt(event.target.value)
     const newGrid = make2DArray(value)
     this.setState({
@@ -130,6 +131,20 @@ const value = parseInt(event.target.value)
       gameOver: false,
       currentPlayer: 'x',
     })
+=======
+    const value = event.target.value
+    const rows = parseInt(value);
+    const cols = parseInt(value);
+    const row_arr = new Array(rows).fill(null)
+    const col_arr = new Array(cols).fill(null)
+    const grid = row_arr.map(x => col_arr.slice())
+    this.setState({
+      grid: cloneDeep(grid),
+      winLimit: value,
+      boardSize: value
+    })
+    console.log(grid)
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
   }
   handleClick = ({rowIndex, colIndex}) => {
     const { currentPlayer, grid, gameOver,winLimit } = this.state
@@ -150,6 +165,7 @@ const value = parseInt(event.target.value)
     }
   }
   resetGame = () => {
+<<<<<<< HEAD
     const { boardSize, winLimit} = this.state;
     var board = make2DArray(boardSize);
     this.setState({
@@ -160,6 +176,23 @@ const value = parseInt(event.target.value)
       gameOver: false,
     })
   }
+=======
+    const rows = this.state.boardSize
+    const cols = this.state.boardSize
+    const row_arr = new Array(rows).fill(null)
+    const col_arr = new Array(cols).fill(null)
+    const grid = row_arr.map(x => col_arr.slice())
+    let cloneGrid = cloneDeep(this.state.grid);
+
+
+    this.setState({
+      currentPlayer: 'x',
+      grid: cloneDeep(grid),
+      gameOver: false,
+      boardSize: this.state.boardSize
+    })
+}
+>>>>>>> 1d269a2d5b146b14d34fa0311ef79b9b77782976
   render() {
     const {
       grid
